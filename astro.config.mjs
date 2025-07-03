@@ -11,16 +11,15 @@ site: 'https://docs.iw4x.dev',
 			title: 'IW4x Docs',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/iw4x' }],
 			sidebar: [
+				// {
+				// 	label: 'Guides',
+				// 	items: [
+				// 		{ label: 'Command Line Arguments', slug: 'guides/cli-args' },
+				// 	],
+				// },
 				{
 					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
-				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					autogenerate: { directory: 'guides' },
 				},
 			],
 		}),
