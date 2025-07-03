@@ -1,0 +1,76 @@
+---
+title: Launcher configuration
+description: The IW4x Launcher config file explained
+lastUpdated: 2025-07-03
+---
+
+import { FileTree } from '@astrojs/starlight/components';
+
+## Location
+The launcher config file is located in your game directory under `launcher/config.json`. To edit it you have to open the file with a text editor (notepad, notepad++, vs code..).
+
+<FileTree>
+- iw4x/
+- launcher
+  - config.json
+- main/
+- iw4x.exe
+- ..
+</FileTree>
+
+## Config format
+The config is a `JSON` file, if you are unsure you can use a [JSON Formatter](https://jsonformatter.org/) to make sure its valid before running the launcher.
+
+```json
+{
+  "update_only": false,
+  "skip_self_update": false,
+  "force_update": false,
+  "args": "-stdout",
+  "cdn_url": "",
+  "offline": false,
+  "testing": false,
+  "disable_art": false,
+  "dxvk": false
+}
+```
+
+## Config values
+Explanation of available config values.
+
+##### `update_only`
+Default value: `false`  
+If set to `true` the Launcher will only update and __not__ launch the game.
+
+##### `skip_self_update`
+Default value: `false`  
+If set to `true` the Launcher will not check for Launcher updates - IW4x will still be updated.
+
+##### `force_update`
+Default value: `false`  
+If set to `true` the Launcher will recalculate file hashes instead of using cached hashes.
+
+##### `args`
+Default value: `"-stdout"`  
+Arguments to be passed to `iw4x.exe`. See [Command line arguments](/guides/cli-args) for more details.
+
+##### `cdn_url`
+Default value: `""`
+Override CDN url.
+
+##### `offline`
+Default value: `false`
+Run the Launcher in Offline mode if set to `true`.
+
+##### `testing`
+Default value: `false`
+Install updates from the testing branch if set to `true`.
+
+##### `disable_art`
+Default value: `false`
+Setting to `true` disables the IW4x ASCII art in the Launcher.
+
+##### `dxvk`
+Default value: `false`
+Install DXVK for improved performance on newer AMD graphics cards if set to `true`.
+Note: To disable set back to `false` __and__ delete `d3d9.dll` and `dxvk.conf`
