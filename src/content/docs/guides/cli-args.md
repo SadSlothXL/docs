@@ -14,7 +14,8 @@ There are multiple ways to use CLI Args with IW4x. The recommended way is adding
 
 ### Launcher config file (recommended)
 
-The launcher config file is located in your game directory under `launcher/config.json`. To add command line arguments for IW4x you have to open the file with a text editor (notepad, notepad++, vs code..). The arguments have to be added to the `args` key, for example like this:
+See [Launcher configuration](/guides/launcher-config/) for details on the config file.  
+The arguments have to be added to the `args` key, for example like this:
 
 ```json
 {
