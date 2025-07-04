@@ -44,6 +44,10 @@ export default defineConfig({
 					label: 'Server Hosting',
 					autogenerate: { directory: 'servers' },
 				},
+				{
+					label: 'Modding',
+					autogenerate: { directory: 'modding' },
+				},
 			],
 		}),
 	],

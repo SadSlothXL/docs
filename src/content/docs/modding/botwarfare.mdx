@@ -1,0 +1,106 @@
+---
+title: Bot Warfare installation
+description: Guide for insatlling the Bot Warfare mod by INeedGames for IW4x
+lastUpdated: 2025-07-04
+---
+
+import { LinkButton } from '@astrojs/starlight/components';
+export const latest_download = "https://github.com/ineedbots/iw4_bot_warfare/releases/download/v2.3.0/iw4bw230.zip";
+
+## Introduction
+
+This guide will teach you how to install the [Bot Warfare](https://github.com/ineedbots/iw4_bot_warfare) mod by [INeedGames](https://ineedbots.github.io/).
+
+Bot Warfare can be installed as either **always loaded scripts** or as a **mod that has to be loaded explicitly**.
+
+### Installation Types
+
+**Script Installation:**
+- Uses your default stats
+- Gets loaded automatically when starting a private match or server
+- Does **not** require a player to download the mod when connecting
+
+**Mod Installation:**
+- Uses its own stats file (everyone starts at rank 1)
+- Has to be loaded explicitly from the mod list
+- Other players need to download the mod to join your game
+
+---
+
+## Script Installation
+
+### 1. Download the Bot Warfare mod
+
+Download the [latest release from the official GitHub repository](https://github.com/ineedbots/iw4_bot_warfare/releases/latest/):
+
+<LinkButton
+  href={latest_download}
+  variant="primary"
+  icon="download"
+  iconPlacement="start"
+>
+  Bot Warfare
+</LinkButton>
+
+### 2. Locate your game folder
+
+Your game folder is located in your SteamLibrary. You can find it through Steam by:
+1. Opening Steam
+2. Right-clicking **Call of Duty: Modern Warfare 2 (2009)** in your games library
+3. Selecting **Manage** → **Browse local files**
+
+### 3. Extract the required files
+
+1. Open the Bot Warfare archive you downloaded
+2. Extract the `scriptdata` folder and the `z_svr_bots.iwd` file
+3. Place the extracted files in the `userraw` folder inside your game directory
+
+Your `userraw` folder should contain:
+- `scriptdata/` folder
+- `z_svr_bots.iwd` file
+
+### 4. Start a game!
+- Start a private match or your server!
+  - The default key to open the Bot Warfare menu in private matches is `5`
+  - For servers you have to configure it via your server config. All setting can be found in the [Bot Warfare README.md](https://github.com/ineedbots/iw4_bot_warfare?tab=readme-ov-file#dvars).
+
+---
+
+## Mod Installation
+
+### 1. Download the Bot Warfare mod
+
+Download the [latest release from the official GitHub repository](https://github.com/ineedbots/iw4_bot_warfare/releases/latest/):
+
+<LinkButton
+  href={latest_download}
+  variant="primary"
+  icon="download"
+  iconPlacement="start"
+>
+  Bot Warfare
+</LinkButton>
+
+### 2. Locate your game folder
+
+Your game folder is located in your SteamLibrary. You can find it through Steam by:
+1. Opening Steam
+2. Right-clicking **Call of Duty: Modern Warfare 2 (2009)** in your games library
+3. Selecting **Manage** -> **Browse local files**
+
+### 3. Install the mod
+
+1. Move the files/folders found in `Move files to root of MW2 folder` from the Bot Warfare release archive into the root of your MW2 install folder
+   - The folder structure should be: `MW2 game folder/mods/mp_bots/z_svr_bots.iwd`
+
+2. The mod is now installed. To run it:
+   - **For dedicated servers:** Set the DVAR `fs_game` to `mods/mp_bots`
+   - **For regular play:** Open the **Mods** option from the main menu, select `mp_bots`, and click **Launch**
+
+3. The mod should be loaded! Start a map and play with bots!
+
+---
+
+If you're having trouble with the installation, you can join our [Discord server](https://discord.com/invite/pV2qJscTXf) for help!
+
+[![Discord Server](../../../assets/img/common/discord.png)](https://discord.com/invite/pV2qJscTXf) 
