@@ -66,3 +66,7 @@ E:\iw4x\iw4x.exe -stdout +map mp_rust -nointro
 | `-disable-mongoose`         | Disable Mongoose HTTP server |
 | `-disable-rate-limit-check` | Disable RCon rate limit checks |
 | `-disable-mod-unloading`    | Disable automatic mod (fs_game) unloading when disconnecting |
+
+If you're having trouble with CLI args, you can join our [Discord server](https://discord.com/invite/pV2qJscTXf) for help!
+
+[![Discord Server](../../../assets/img/common/discord.png)](https://discord.com/invite/pV2qJscTXf) 

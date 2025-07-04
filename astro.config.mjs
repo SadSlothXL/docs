@@ -40,6 +40,10 @@ export default defineConfig({
 					label: 'Guides',
 					autogenerate: { directory: 'guides' },
 				},
+				{
+					label: 'Server Hosting',
+					autogenerate: { directory: 'servers' },
+				},
 			],
 		}),
 	],
