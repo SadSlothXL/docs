@@ -9,6 +9,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'IW4x Docs',
+			favicon: '/favicon.png',
 			customCss: [
 				'./src/styles/custom.css',
 			],
