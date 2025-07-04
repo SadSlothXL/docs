@@ -39,8 +39,6 @@ To open the full console hold `Shift` while pressing the console button.
 
 ---
 
-## Need Help?
-
 If you're having trouble with console commands, you can join our [Discord server](https://discord.com/invite/pV2qJscTXf) for help!
 
 [![Discord Server](../../../assets/img/common/discord.png)](https://discord.com/invite/pV2qJscTXf)
