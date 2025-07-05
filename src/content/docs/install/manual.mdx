@@ -1,0 +1,83 @@
+---
+title: Manual installation (Windows)
+description: How to install the IW4x client for Call of Duty Modern Warfare 2
+sidebar:
+  order: 2
+tableOfContents:
+  maxHeadingLevel: 5
+lastUpdated: 2025-07-05
+---
+
+import { LinkButton } from '@astrojs/starlight/components';
+import { FileTree } from '@astrojs/starlight/components';
+
+:::danger
+You will not receive updates when installing IW4x manually!  
+Please use the [Launcher installation instructions](/install/windows-launcher) instead.
+:::
+
+## Manual installation
+
+If you run into issues with the IW4x Launcher or use an older Windows version you can manually install IW4x.
+
+You __don't__ have to do this if you followed the [Launcher installation instructions](/install/windows-launcher)!
+
+#### 1. Download [Call of Duty: Modern Warfare 2 (2009)](https://store.steampowered.com/app/10180/Call_of_Duty_Modern_Warfare_2_2009/)
+Find Call of Duty: Modern Warfare 2 (2009) and Call of Duty: Modern Warfare 2 (2009) - Multiplayer in your Steam library, click each and select `Install`. Wait for the downloads to finish before you continue!
+
+#### 2. Download the IW4x Client __and__ Rawfiles
+
+  <LinkButton
+    href="https://github.com/iw4x/iw4x-client/releases/latest/download/iw4x.dll"
+    variant="primary"
+    icon="download"
+    iconPlacement="start"
+  >
+    Client
+  </LinkButton>
+
+  <LinkButton
+    href="https://github.com/iw4x/iw4x-rawfiles/releases/latest/download/release.zip"
+    variant="primary"
+    icon="download"
+    iconPlacement="start"
+  >
+    Rawfiles
+  </LinkButton>
+
+#### 3. Locate your Game folder
+Your game folder is located in your SteamLibrary, you can find it through Steam by selecting Call of Duty: Modern Warfare 2 (2009) in your library, right-clicking it and selecting Manage -> Browse local files.
+
+![Browse local files](../../../assets/img/install/locate_gamedir.png)
+
+#### 4. Manually install IW4x
+
+Move the downloaded `iw4x.dll` into the game folder.  
+Extract the contents of `release.zip` into the game folder.
+
+Your folder should look similiar to this:
+<FileTree>
+- iw4x/
+- main/
+- miles/
+- userraw/
+- zone/
+- binkw32.dll
+- iw4mp.exe
+- iw4sp.exe
+- iw4x.dll
+- iw4x.exe
+- mss32.dll
+- zonebuilder.exe
+</FileTree>
+
+#### 5. Run `iw4x.exe`
+Double-click `iw4x.exe` to start the game!
+
+---
+
+<center>
+Having issues with the installation process? Join our [Discord server](https://discord.com/invite/pV2qJscTXf) for help!
+
+[![Discord Server](../../../assets/img/common/discord.png)](https://discord.com/invite/pV2qJscTXf)
+</center>

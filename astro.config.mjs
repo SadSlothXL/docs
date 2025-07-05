@@ -38,6 +38,10 @@ export default defineConfig({
 				// 	],
 				// },
 				{
+					label: 'Installation',
+					autogenerate: { directory: 'install' },
+				},
+				{
 					label: 'Guides',
 					autogenerate: { directory: 'guides' },
 				},
