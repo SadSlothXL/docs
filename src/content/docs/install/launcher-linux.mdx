@@ -1,0 +1,72 @@
+---
+title: Installation (Linux)
+description: How to install the IW4x client for Call of Duty Modern Warfare 2 on Linux
+sidebar:
+  order: 2
+tableOfContents:
+  maxHeadingLevel: 5
+lastUpdated: 2025-07-05
+---
+
+import { LinkButton } from '@astrojs/starlight/components';
+
+## Prerequisites
+Before installing IW4x, you need to obtain a legitimate copy of Call of Duty: Modern Warfare 2 (2009) [__from Steam__](https://store.steampowered.com/app/10180/Call_of_Duty_Modern_Warfare_2_2009/).
+
+:::caution[Only Steam is supported]
+IW4x does not support game copies from the Microsoft Store!
+:::
+
+## Launcher installation
+The recommended way to install IW4x, with automatic updates included!
+
+#### 1. Download [Call of Duty: Modern Warfare 2 (2009)](https://store.steampowered.com/app/10180/Call_of_Duty_Modern_Warfare_2_2009/)
+Find Call of Duty: Modern Warfare 2 (2009) and Call of Duty: Modern Warfare 2 (2009) - Multiplayer in your Steam library, click each and select `Install`. Wait for the downloads to finish before you continue!
+
+#### 2. Locate your Game folder
+Your game folder is located in your SteamLibrary, you can find it through Steam by selecting Call of Duty: Modern Warfare 2 (2009) in your library, right-clicking it and selecting Manage -> Browse local files.
+
+![Browse local files](../../../assets/img/install/locate_gamedir.png)
+
+
+#### 3. Open a terminal and navigate to your Game folder
+```bash
+cd ~/.local/share/Steam/steamapps/common/Call\ of\ Duty\ Modern\ Warfare\ 2
+```
+If you found a different Path in step 2 you have to replace it in the command above. You can auto-complete directory/file names with `TAB`.
+
+#### 4. Download the IW4x Launcher
+```bash
+wget https://github.com/iw4x/launcher/releases/latest/download/iw4x-launcher-x86_64-unknown-linux-gnu.tar.gz
+```
+or download it manually and place it in your game folder:
+  <LinkButton
+    href="https://github.com/iw4x/launcher/releases/latest/download/iw4x-launcher-x86_64-unknown-linux-gnu.tar.gz"
+    variant="primary"
+    icon="linux"
+    iconPlacement="start"
+  >
+    Linux
+  </LinkButton>
+
+#### 5. Extract the IW4x Launcher
+```bash
+tar xfv ~/Downloads/iw4x-launcher-x86_64-unknown-linux-gnu.tar.gz
+```
+
+#### 6. Run the IW4x Launcher
+```bash
+chmod +x iw4x-launcher
+./iw4x-launcher --update
+```
+
+#### 7. Run the game
+Add the iw4x.exe as a Non-Steam game in your Steam Library for best performance, you can try different Proton versions to see which works best for you.
+
+---
+
+<center>
+Having issues with the installation process? Join our [Discord server](https://discord.com/invite/pV2qJscTXf) for help!
+
+[![Discord Server](../../../assets/img/common/discord.png)](https://discord.com/invite/pV2qJscTXf)
+</center>
