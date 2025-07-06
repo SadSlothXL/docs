@@ -35,3 +35,7 @@ Find your `iw4x.exe` in the game folder (next to the launcher), Right-click it, 
 DXVK is a translation layer that implements multiple Direct3D versions in Vulkan. These implementations can lead to significant performance increase and reduces choppiness.  
 The IW4x Launcher can automatically install DXVK for you, you just have to enable it in the config file.
 See the [Launcher configuration guide](/guides/launcher-config/) for more information.
+
+### For **Linux** users
+
+Disable Gampead in the ingame settings if you don't use it.
