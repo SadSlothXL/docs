@@ -12,4 +12,7 @@ On the main menu, select Barracks and then "Unlock stats". You should now be max
 
 ## Console
 
-You can unlock all using the "unlockstats" command in the console. See [the console guide](/guides/console/) for more details.
+You can unlock all using the "unlockstats" command in the console.  
+You can set a specific rank and prestige using the `setPlayerData experience <number>` and `setPlayerData prestige <number>` commands.  
+See [the console guide](/guides/console/) for more details.
+
