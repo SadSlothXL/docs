@@ -1,7 +1,7 @@
 ---
-title: Command line arguments
+title: IW4x command line arguments
 description: IW4x command line args and how to use them
-lastUpdated: 2025-07-03
+lastUpdated: 2025-07-08
 ---
 
 ## What are command line arguments
