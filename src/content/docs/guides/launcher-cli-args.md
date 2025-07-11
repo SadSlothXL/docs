@@ -1,7 +1,7 @@
 ---
 title: Launcher command line arguments
 description: IW4x launcher command line args and how to use them
-lastUpdated: 2025-07-08
+lastUpdated: 2025-07-11
 ---
 
 ## What are command line arguments
@@ -22,18 +22,18 @@ E:\iw4x\iw4x-launcher.exe --help
 
 | Argument                    | Description                                    |
 |:----------------------------|:-----------------------------------------------|
-| `-p, --path <PATH>`         | Game install path, usually in steamapps/common/Call of Duty Modern Warfare 2 |
-| `-c, --config <CONFIG>`     | Custom config path, default is <game-path>/launcher/config.json |
+| `-p, --path="<PATH>"`         | Game install path, usually in steamapps/common/Call of Duty Modern Warfare 2 |
+| `-c, --config="<CONFIG>"`     | Custom config path, default is <game-path>/launcher/config.json |
 | `-u, --update`              | Update only, don't launch IW4x |
 | `-f, --force`               | Force file re-check |
-| `--args <ARGS>`             | Arguments passed to the game, default is -stdout |
+| `--args="<ARGS>"`             | Arguments passed to the game, default is -stdout |
 | `--skip-self-update`        | Don't update the launcher |
 | `--ignore-required-files`   | Don't check for required game files |
 | `--skip-connectivity-check` | Disable CDN rating and use default CDN |
 | `--offline`                 | Run in offline mode |
 | `--testing`                 | Install from testing branch (IW4x & Launcher) |
 | `--rate`                    | Rate CDN servers and print results |
-| `--cdn-url <CDN_URL>`       | Specify custom CDN url |
+| `--cdn-url="<CDN_URL>"`       | Specify custom CDN url |
 | `--disable-art`             | Disable ASCII art |
 | `--dxvk`                    | Install DXVK for better AMD performance |
 | `-h, --help`                | Print help |

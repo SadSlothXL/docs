@@ -1,7 +1,7 @@
 ---
 title: IW4x command line arguments
 description: IW4x command line args and how to use them
-lastUpdated: 2025-07-08
+lastUpdated: 2025-07-11
 ---
 
 ## What are command line arguments
@@ -32,7 +32,7 @@ With this example, when running the IW4x Launcher, IW4x will open a console wind
 You can create a shortcut of the IW4x Launcher by right-clicking it and selecting "Create shortcut". You can then right-click the shortcut, select properties and append the arguments in the `Target` field like this:
 
 ```
-E:\iw4x\iw4x-launcher.exe --args "-stdout +map mp_rust -nointro"
+E:\iw4x\iw4x-launcher.exe --args="-stdout +map mp_rust -nointro"
 ```
 
 ### IW4x shortcut
