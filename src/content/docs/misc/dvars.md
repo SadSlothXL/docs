@@ -5,7 +5,7 @@ lastUpdated: 2025-07-13
 ---
 
 For details on how to use DVars, see [the console guide](/guides/console/).  
-These DVars have been parsed automatically, there may be mismatches for default values.
+These DVars have been parsed automatically, there may be mismatches for default values. Not all DVars are in use, some may be leftovers from earlier titles, some may have been disabled or broken by IW4x.
 
 ## Flags
 
