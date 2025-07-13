@@ -53,6 +53,10 @@ export default defineConfig({
 					label: 'Modding',
 					autogenerate: { directory: 'modding' },
 				},
+				{
+					label: 'Misc',
+					autogenerate: { directory: 'misc' },
+				}
 			],
 		}),
 	],
