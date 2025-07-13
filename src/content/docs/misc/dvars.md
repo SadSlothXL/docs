@@ -16,6 +16,7 @@ These DVars have been parsed automatically, there may be mismatches for default 
 | `I` | DVAR_INIT | Don't allow change from console at all |
 | `L` | DVAR_LATCH | Will only change when C code next does a Dvar_Get(), so it can't be changed |
 | `R` | DVAR_ROM | Display only, cannot be set by user at all |
+| `S` | DVAR_SERVERINFO | Sent by the server |
 | `U` | DVAR_USERINFO | Sent to server on connect |
 
 ## DVars
@@ -318,9 +319,9 @@ These DVars have been parsed automatically, there may be mismatches for default 
 | `cg_fontIconAutocomplete` | `1` | A |  |
 | `cg_fontIconAutocompleteHint` | `1` | A |  |
 | `cg_footsteps` | `1` | C |  |
-| `cg_fov` | `65` | A |  |
+| `cg_fov` | `65` | A | Field of View |
 | `cg_fovMin` | `1` | A |  |
-| `cg_fovScale` | `1` | A |  |
+| `cg_fovScale` | `1` | A | Field of View factor |
 | `cg_friendlyNameFadeIn` | `0` | C |  |
 | `cg_friendlyNameFadeOut` | `1500` | C |  |
 | `cg_gameBoldMessageWidth` | `390` | A |  |
@@ -534,7 +535,7 @@ These DVars have been parsed automatically, there may be mismatches for default 
 | `cl_updateAvailable` | `0` |  |  |
 | `cl_voice` | `1` | U A |  |
 | `cl_yawspeed` | `140` | A |  |
-| `clanName` |  | A |  |
+| `clanName` |  | A | Player clan tag |
 | `clientSideEffects` | `1` | C |  |
 | `com_animCheck` | `0` |  |  |
 | `com_cinematicEndInWhite` | `0` |  |  |
@@ -643,7 +644,7 @@ These DVars have been parsed automatically, there may be mismatches for default 
 | `cpu_speed_12players` | `3` |  |  |
 | `cpu_speed_18players` | `6` |  |  |
 | `cpu_speed_8players` | `2.7` |  |  |
-| `customTitle` |  | U A |  |
+| `customTitle` |  | U A | Custom title on calling card |
 | `debugOverlay` | `Off` |  |  |
 | `developer` | `0` |  |  |
 | `developer_script` | `0` |  |  |
