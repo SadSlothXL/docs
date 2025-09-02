@@ -10,21 +10,24 @@ lastUpdated: 2025-09-02
 
 import { LinkButton } from '@astrojs/starlight/components';
 
-## Prerequisites
+## IW4x dedicated server setup
+This guide will teach you how to setup a dedicated game server for the IW4x mod.
+
+#### Prerequisites
 You need to obtain a legitimate copy of Call of Duty: Modern Warfare 2 (2009) [__from Steam__](https://store.steampowered.com/app/10180/Call_of_Duty_Modern_Warfare_2_2009/). This can be the same copy used to play the game, you do not require additional licenses for creating servers.
 
 :::caution[Only Steam is supported]
 IW4x does not support game copies from the Microsoft Store!
 :::
 
-## 1. Preparations
+#### 1. Preparations
 - When running a server on your local computer you should create a copy of your game folder for the dedicated server.
 - On remote machines you can use [SteamCMD](https://developer.valvesoftware.com/wiki/SteamCMD) to download Modern Warfare 2 (2009)
   - The game ID is `10190`
   - On Linux you can change the installation platform using `@sSteamCmdForcePlatformType windows`
 - Open the server port in your machine's and router's (or cloud platform's) firewall. The default port is 28960 and the game uses the UDP protocol.
 
-### [Optional] Downloading using SteamCMD
+##### [Optional] Downloading MW2 using SteamCMD
 If you haven't downloaded a copy of MW2 to the machine that will be running your server yet, you can do so using [SteamCMD](https://developer.valvesoftware.com/wiki/SteamCMD).
 Please follow the respective SteamCMD installation instructions for your operating system ([Windows](https://developer.valvesoftware.com/wiki/SteamCMD#Windows), [Linux](https://developer.valvesoftware.com/wiki/SteamCMD#Linux)).
 After installing SteamCMD you can download MW2 as follows:
@@ -34,45 +37,45 @@ After installing SteamCMD you can download MW2 as follows:
 - Login using your Steam Account: `login <username>`
 - Download the MW2 Multiplayer by running `app_update 10190 validate`
 
-### [Linux] Install wine
+##### [Linux] Install wine
 You can find guides for installing wine on your respective distribution on the internet, you only need the latest wine.
 
-### [Windows] Install Redistributables
+##### [Windows] Install Redistributables
 Download and run both installers to make sure everything is installed correctly.
 - [VC++ 2005](https://www.microsoft.com/en-us/download/details.aspx?id=26347)
 - [DirectX 2010 (x86)](https://www.microsoft.com/en-us/download/details.aspx?id=35)
 
-## 2. Install IW4x
+#### 2. Install IW4x
 You can follow the general installation guides for this step ([Windows](/install/launcher/), [Linux](/install/launcher-linux/), [Manual](/install/manual/)).
 It's recommended to use the `--update` flag so the launcher doesn't run the game, but running it like you would to play the game will install it just fine too.
 - Linux `./iw4x-launcher --update`
 - Windows `.\iw4x-launcher.exe --update`
 
-## 3. Server configs
+#### 3. Server configs
 To run a dedicated server you have to setup a configuration file. We provide some pre-configured config files and start scripts in the [iw4-server-configs repository](https://github.com/iw4x/iw4-server-configs/).
 1. Download the [IW4 Server Configs](https://github.com/iw4x/iw4-server-configs/archive/refs/heads/main.zip)
 2. Unpack the content of the `iw4-server-configs-main` folder to the root of your server, so the Dedicated* files are next to the iw4x.exe.
 3. Create a copy of userraw/server.cfg (for example `userraw/myserver.cfg`)
 4. Edit your server config to your liking by opening it in a Text Editor (like Notepad)
 
-## 4. Start script
+#### 4. Start script
 The server configs come with some pre-made start scripts you can use to run your server. We are mainly interested in `DedicatedServer.bat` (Windows) and `DedicatedServer.sh` (Linux).  
 You **have** to open the script in a Text Editor, here you can modify some more values to your liking. Mainly you'll have to update the "ServerFilename" to the new config file name you chose earlier (myserver.cfg).  
 If you run multiple servers you'll also have to increase the GamePort by at least 1.
 
-## 5. Start the server
+#### 5. Start the server
 Run the start script and see what happens! If it closes without an error you can run it from a terminal to make sure you are able to read the output.  
 You know it worked when the server console has a line similar to `MapRotation: applying key 'map' with value 'mp_afghan'` towards the end.  
 If you are running on a remote linux machine you may want to use something like [screen](https://linuxize.com/post/how-to-use-linux-screen/) to keep your shell session alive and the server running.  
 You should now be able to connect to your server.
 
-## Troubleshooting
+### Troubleshooting
 - If your server seems to be running but doesn't show up on the server list:
   - Try connecting manually using the [console](/guides/console): `connect ip:port`
   - If you are running the server on the same local network you are trying to play on you may not see it due to some networking issues, but you should still be able to join it.
   - Verify if your server is visible on [getServe.rs](https://getserve.rs/iw4). If it shows up there it'll be visible to everyone!
 
-## Other
+### Other
 - Appending `__HIDDEN__` to the hostname will hide the server from the Server Browser. (It won't make it undiscoverable though!)
 
 <center>
