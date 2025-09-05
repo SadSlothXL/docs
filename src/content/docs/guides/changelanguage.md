@@ -1,7 +1,7 @@
 ---
 title: Changing Language
 description: Changing Language on IW4x
-lastUpdated: 2025-09-05
+lastUpdated: 2025-09-06
 ---
 
 ## Steam
