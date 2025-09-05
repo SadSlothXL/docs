@@ -6,7 +6,8 @@ lastUpdated: 2025-09-05
 
 ## Steam
 
-Open steam and head to your library, find Call of Duty: Modern Warfare 2 (2009), right click on the name and open properties.
+Open steam and head to your library, find Call of Duty: Modern Warfare 2 (2009).
+Right click on the name and open properties.
 
 ![Changing Language](../../../assets/img/changelanguage/changelanguage_01.png)
 
