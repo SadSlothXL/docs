@@ -19,7 +19,7 @@ Once you've changed your language you will need to update your game to download 
 
 ![Changing Language](../../../assets/img/changelanguage/changelanguage_03.png)
 
-# Note!
+## Different Game directory
 
 If your iw4x is in a different location you will need to move the language files to that directory.
 
