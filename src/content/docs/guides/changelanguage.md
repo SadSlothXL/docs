@@ -29,5 +29,7 @@ Do this again but with the zone files, copy the zone folder of the language you 
 
 And lastly you will need to copy over the new `localization.txt` for that language
 
-:::Disclaimer!
+::Disclaimer!
 If you have a region locked version of the game you will **not** be able to change languages!
+
+:::
