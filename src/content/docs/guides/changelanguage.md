@@ -31,5 +31,4 @@ And lastly you will need to copy over the new `localization.txt` for that langua
 
 :::note!
 If you have a region locked version of the game you will **not** be able to change languages!
-
 :::
